@@ -1,0 +1,17 @@
+1.
+setof(A,(restaurant(A,_,_),branch(A,beigang)),R).
+
+2.
+setof(D,(restaurant(A1,_,yuecai),restaurant(A2,_,xiangcai),sameDistrict2(A1,A2,D)),Res).
+
+3.
+setof(A1,(restaurant(A1,_,_),findall(B1,branch(A1,B1),N1),length(N1,L1),findall(A2,(restaurant(A2,_,_),findall(B2,branch(A2,B2),N2),length(N2,L2),L1>L2),LESSN),length(LESSN,L),L=0),Res).
+
+4.
+findall(B,(branch(_,B),findall(A,(restaurant(A,_,_),branch(A,B)),Res1),length(Res1,L),L>1),Res).
+
+5.
+setof(A1,(restaurant(A1,Y1,_),findall(A2,(restaurant(A2,Y2,_),A1\=A2,Y1>Y2),L1),length(L1,L),L=0),Res).
+
+6.
+findall(A,(restaurant(A,_,_),setof(B,branch(A,B),Res2),length(Res2,L),L>9),Res).
