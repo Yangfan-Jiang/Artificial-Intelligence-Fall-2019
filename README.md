@@ -2,7 +2,8 @@
 
 The assignments of Artificial Intelligence (DCS311) Fall 2019, lectured by Prof. Y. Liu
 
-Tasks of each assignment are list as below:
+Contents of each assignment are listed as below:
+
 - Lab 1: Uninformed Search - Maze Problem
 - Lab 2: Informed (Heuristic) Search - Puzzle Problem (IDA*)
 - Lab 3: Adversarial Search - Othello Game ($\alpha$ − $\beta$ pruning)
